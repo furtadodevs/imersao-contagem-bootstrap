@@ -10,6 +10,7 @@
 
     <!-- Bootstrap 5.0.2 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="./style.css">
@@ -18,6 +19,51 @@
 <body class="d-flex flex-column min-vh-100">
 
 
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+
+    <div class="container-fluid px-lg-5">
+
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            Imersão Contagem
+        </a>
+
+        <!-- Botão mobile -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <!-- LINKS -->
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Benefícios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Acessibilidade</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Comunidade</a></li>
+
+            </ul>
+
+            <!-- BOTÕES -->
+            <div class="d-flex gap-2">
+
+                <button class="btn btn-login">Entrar</button>
+                <button class="btn btn-register">Cadastrar</button>
+
+                <button class="btn mic-btn">
+                    <i class="bi bi-mic-fill"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</nav>
 
 
     <!-- Banner -->
@@ -49,6 +95,7 @@
                 </div>
             </div>
         </nav>
+
 
     </header>
 
@@ -262,14 +309,216 @@
         </section>
 
 
+
     </main>
 
+
+
+    
     <!-- Rodapé -->
-    <footer class="bg-dark text-white py-3 mt-auto">
-        <div class="container text-center">
-            <small>&copy; 2026 - Meu Projeto. Todos os direitos reservados.</small>
-        </div>
-    </footer>
+
+    <footer class=" text-white py-3 mt-auto">
+ 
+        <!-- Bootstrap Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      
+     <style>
+      
+     /* evita o footer cobrir conteúdo */
+     body{
+         padding-bottom:260px;
+     }
+      
+     /* FOOTER FIXO */
+     .footer-modern{
+      
+         position:fixed;
+         bottom:0;
+         left:0;
+      
+         width:100%;
+      
+         background: linear-gradient(135deg,#050505 0%,#12001f 35%,#2b0047 70%,#050505 100%);
+      
+         color:#fff;
+      
+         padding:30px 0 20px;
+      
+         z-index:9999;
+      
+         overflow:hidden;
+     }
+      
+     /* brilho decorativo */
+     .footer-modern::before,
+     .footer-modern::after{
+         content:"";
+         position:absolute;
+         border-radius:50%;
+         filter:blur(120px);
+     }
+      
+     .footer-modern::before{
+         width:280px;
+         height:280px;
+         background:#7c3aed25;
+         top:-120px;
+         left:-100px;
+     }
+      
+     .footer-modern::after{
+         width:260px;
+         height:260px;
+         background:#9333ea20;
+         bottom:-120px;
+         right:-100px;
+     }
+      
+     .footer-modern .container{
+         position:relative;
+         z-index:2;
+     }
+      
+     /* textos */
+     .footer-modern h5{
+         color:#C084FC;
+         font-weight:600;
+         font-size:16px;
+         margin-bottom:12px;
+     }
+      
+     .footer-modern p{
+         color:#d1d5db;
+         font-size:13px;
+         margin:0;
+         line-height:1.5;
+     }
+      
+     .footer-modern ul{
+         list-style:none;
+         padding:0;
+         margin:0;
+     }
+      
+     .footer-modern ul li{
+         color:#d1d5db;
+         font-size:13px;
+         margin-bottom:8px;
+     }
+      
+     .footer-modern ul li i{
+         color:#A855F7;
+         margin-right:8px;
+     }
+      
+     /* serviços links */
+     .footer-modern a{
+         color:#d1d5db;
+         text-decoration:none;
+         transition:.3s;
+         font-size:13px;
+     }
+      
+     .footer-modern a:hover{
+         color:#C084FC;
+         padding-left:4px;
+     }
+      
+     /* redes sociais */
+     .social-icons{
+         display:flex;
+         gap:10px;
+         margin-top:10px;
+     }
+      
+     .social-icons a{
+      
+         width:38px;
+         height:38px;
+      
+         display:flex;
+         justify-content:center;
+         align-items:center;
+      
+         border-radius:50%;
+      
+         background:rgba(255,255,255,.08);
+      
+         color:#fff;
+      
+         font-size:16px;
+      
+         transition:.3s;
+      
+     }
+      
+     .social-icons a:hover{
+         background:#7C3AED;
+         transform:translateY(-4px);
+         box-shadow:0 8px 18px rgba(124,58,237,.4);
+     }
+      
+     </style>
+      
+     <footer class="footer-modern">
+      
+     <div class="container">
+      
+     <div class="row">
+      
+         <!-- SOBRE -->
+         <div class="col-4">
+      
+             <h5>Imersão Contagem</h5>
+      
+             <p>
+                 Conectando você ao coração de Contagem.
+                 Conectando pessoas, empresas e oportunidades através da tecnologia,
+                 inovação e desenvolvimento.
+             </p>
+      
+         </div>
+      
+         <!-- SERVIÇOS -->
+         <div class="col-4">
+      
+             <h5>Serviços</h5>
+      
+             <ul>
+                 <li><a href="#">Consultoria</a></li>
+                 <li><a href="#">Eventos</a></li>
+                 <li><a href="#"></a>Parceiros</li>
+                 <li><a href="#"></a>Empresas</li>
+             </ul>
+      
+         </div>
+      
+         <!-- CONTATO -->
+         <div class="col-4">
+      
+             <h5>Contato</h5>
+      
+             <ul>
+                 <li><i class="bi bi-telephone-fill"></i>(31) 99999-9999</li>
+                 <li><i class="bi bi-envelope-fill"></i>contato@email.com</li>
+             </ul>
+      
+             <div class="social-icons">
+      
+                 <a href="#"><i class="bi bi-instagram"></i></a>
+                 <a href="#"><i class="bi bi-facebook"></i></a>
+                 <a href="#"><i class="bi bi-whatsapp"></i></a>
+      
+             </div>
+      
+         </div>
+      
+     </div>
+      
+     </div>
+      
+     </footer>
+      
 
     <!-- Bootstrap 5.0.2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
