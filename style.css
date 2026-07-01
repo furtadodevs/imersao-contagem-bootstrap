@@ -402,3 +402,136 @@ nav{
 
 }
 
+ 
+/* FOOTER FIXO */
+.footer-modern{
+
+    width: 100%;
+
+    background: linear-gradient(135deg,#050505 0%,#12001f 35%,#2b0047 70%,#050505 100%);
+
+    color:#fff;
+
+    padding:30px 0 20px;
+
+    overflow:hidden;
+}
+ 
+/* brilho decorativo */
+.footer-modern::before,
+.footer-modern::after{
+    content:"";
+    position:absolute;
+    border-radius:50%;
+    filter:blur(120px);
+}
+ 
+.footer-modern::before{
+    width:280px;
+    height:280px;
+    background:#7c3aed25;
+    top:-120px;
+    left:-100px;
+}
+ 
+.footer-modern::after{
+    width:260px;
+    height:260px;
+    background:#9333ea20;
+    bottom:-120px;
+    right:-100px;
+}
+ 
+.footer-modern .container{
+    position:relative;
+    z-index:2;
+}
+ 
+/* textos */
+.footer-modern h5{
+    color:#C084FC;
+    font-weight:600;
+    font-size:16px;
+    margin-bottom:12px;
+}
+ 
+.footer-modern p{
+    color:#d1d5db;
+    font-size:13px;
+    margin:0;
+    line-height:1.5;
+}
+ 
+.footer-modern ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+ 
+.footer-modern ul li{
+    color:#d1d5db;
+    font-size:13px;
+    margin-bottom:8px;
+}
+ 
+.footer-modern ul li i{
+    color:#A855F7;
+    margin-right:8px;
+}
+ 
+/* serviços links */
+.footer-modern a{
+    color:#d1d5db;
+    text-decoration:none;
+    transition:.3s;
+    font-size:13px;
+}
+ 
+.footer-modern a:hover{
+    color:#C084FC;
+    padding-left:4px;
+}
+ 
+/* redes sociais */
+.social-icons{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+ 
+.social-icons a{
+ 
+    width:38px;
+    height:38px;
+ 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ 
+    border-radius:50%;
+ 
+    background:rgba(255,255,255,.08);
+ 
+    color:#fff;
+ 
+    font-size:16px;
+ 
+    transition:.3s;
+ 
+}
+ 
+.social-icons a:hover{
+    background:#7C3AED;
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(124,58,237,.4);
+}
+
+
+body{
+    background: #23093f;
+}
+
+h2{
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
