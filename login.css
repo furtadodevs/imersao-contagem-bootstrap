@@ -1,0 +1,558 @@
+
+.carouselExample {
+    height: 350px;
+    object-fit: cover;
+}
+.btn {
+    background-color: #a454ff;
+    color: white;
+}
+.btn:hover {
+    background-color: #7b07ff;
+}
+
+header {
+    background-color: #6f42c1;
+    color: #fff;
+}
+footer {
+    background-color: #6f42c1;
+    color: #fff;
+}
+body{
+    background-color: black;
+}
+nav{
+    background-color: #6f42c1;
+    color: #fff;
+    
+}
+
+/*========================================
+            NAVBAR
+========================================*/
+
+.custom-navbar{
+    background: linear-gradient(90deg, #2b0b42, #4b1d69, #2b0b42);
+    min-height: 80px;
+    padding: 12px 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.18);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+/*========================================
+            LOGO
+========================================*/
+
+.navbar-brand{
+    color:#fff !important;
+    font-size:1.4rem;
+    font-weight:700;
+    letter-spacing:.5px;
+    transition:.3s;
+}
+
+.navbar-brand:hover{
+    color:#d9b6ff !important;
+}
+
+/*========================================
+            MENU HAMBURGUER
+========================================*/
+
+.menu-btn{
+
+    width:45px;
+    height:45px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:24px;
+
+    transition:.3s;
+
+}
+
+.menu-btn:hover{
+
+    background:#8d3dff;
+
+    color:white;
+
+}
+
+/*========================================
+            PESQUISA
+========================================*/
+
+.search-box{
+
+    width:340px;
+    height:46px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 15px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.search-box:hover{
+
+    background:rgba(255,255,255,.12);
+
+    border-color:#a65bff;
+
+}
+
+.search-box i{
+
+    color:#d9c0ff;
+
+    font-size:18px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    margin-left:10px;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    color:white;
+
+}
+
+.search-box input::placeholder{
+
+    color:#d9c0ff;
+
+}
+
+/*========================================
+            LINKS
+========================================*/
+
+.navbar-nav{
+
+    gap:8px;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+    font-weight:600;
+
+    padding:.7rem .9rem !important;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:15px;
+
+    bottom:5px;
+
+    width:0;
+
+    height:2px;
+
+    background:#bb75ff;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#e3c9ff !important;
+
+}
+
+.nav-link:hover::after{
+
+    width:calc(100% - 30px);
+
+}
+
+/*========================================
+            BOTÕES
+========================================*/
+
+.navbar-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-left:30px;
+
+}
+
+.btn-login{
+
+    padding:9px 22px;
+
+    border-radius:10px;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    background:transparent;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-login:hover{
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+}
+
+.btn-register{
+
+    padding:9px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:linear-gradient(135deg,#8d3dff,#b95fff);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-register:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(141,61,255,.35);
+
+    color:white;
+
+}
+
+.mic-btn{
+
+    width:42px;
+    height:42px;
+
+    border-radius:10px;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    background:transparent;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.mic-btn:hover{
+
+    background:#8d3dff;
+
+    color:white;
+
+}
+
+/*========================================
+        BOTÃO DO BOOTSTRAP
+========================================*/
+
+.navbar-toggler{
+
+    border:none;
+
+    box-shadow:none !important;
+
+}
+
+.navbar-toggler:focus{
+
+    box-shadow:none;
+
+}
+
+/*========================================
+            RESPONSIVO
+========================================*/
+
+@media (max-width:991px){
+
+    .custom-navbar{
+
+        padding:15px;
+
+    }
+
+    .search-box{
+
+        display:none !important;
+
+    }
+
+    .navbar-collapse{
+
+        margin-top:20px;
+
+        background:#321048;
+
+        border-radius:12px;
+
+        padding:20px;
+
+    }
+
+    .navbar-nav{
+
+        text-align:center;
+
+        margin-bottom:20px;
+
+        gap:12px;
+
+    }
+
+
+    .navbar-buttons{
+
+        width:100%;
+
+        margin-left:0;
+
+        flex-direction:column;
+
+    }
+
+    .navbar-buttons .btn{
+
+        width:100%;
+
+    }
+
+    .mic-btn{
+
+        width:100%;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .navbar-brand{
+
+        font-size:1.15rem;
+
+    }
+
+    .menu-btn{
+
+        width:40px;
+        height:40px;
+
+        font-size:20px;
+
+    }
+
+}
+
+ 
+/* FOOTER FIXO */
+.footer-modern{
+
+    width: 100%;
+
+    background: linear-gradient(135deg,#050505 0%,#12001f 35%,#2b0047 70%,#050505 100%);
+
+    color:#fff;
+
+    padding:30px 0 20px;
+
+    overflow:hidden;
+}
+ 
+/* brilho decorativo */
+.footer-modern::before,
+.footer-modern::after{
+    content:"";
+    position:absolute;
+    border-radius:50%;
+    filter:blur(120px);
+}
+ 
+.footer-modern::before{
+    width:280px;
+    height:280px;
+    background:#7c3aed25;
+    top:-120px;
+    left:-100px;
+}
+ 
+.footer-modern::after{
+    width:260px;
+    height:260px;
+    background:#9333ea20;
+    bottom:-120px;
+    right:-100px;
+}
+ 
+.footer-modern .container{
+    position:relative;
+    z-index:2;
+}
+ 
+/* textos */
+.footer-modern h5{
+    color:#C084FC;
+    font-weight:600;
+    font-size:16px;
+    margin-bottom:12px;
+}
+ 
+.footer-modern p{
+    color:#d1d5db;
+    font-size:13px;
+    margin:0;
+    line-height:1.5;
+}
+ 
+.footer-modern ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+ 
+.footer-modern ul li{
+    color:#d1d5db;
+    font-size:13px;
+    margin-bottom:8px;
+}
+ 
+.footer-modern ul li i{
+    color:#A855F7;
+    margin-right:8px;
+}
+ 
+/* serviços links */
+.footer-modern a{
+    color:#d1d5db;
+    text-decoration:none;
+    transition:.3s;
+    font-size:13px;
+}
+ 
+.footer-modern a:hover{
+    color:#C084FC;
+    padding-left:4px;
+}
+ 
+/* redes sociais */
+.social-icons{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+ 
+.social-icons a{
+ 
+    width:38px;
+    height:38px;
+ 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ 
+    border-radius:50%;
+ 
+    background:rgba(255,255,255,.08);
+ 
+    color:#fff;
+ 
+    font-size:16px;
+ 
+    transition:.3s;
+ 
+}
+ 
+.social-icons a:hover{
+    background:#7C3AED;
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(124,58,237,.4);
+}
+
+
+body{
+    background: #23093f;
+}
+
+h2{
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.dropdown-toggle::after{
+    display:none;
+}
+
+.dropdown img{
+    object-fit:cover;
+    transition:.3s;
+}
+
+.dropdown img:hover{
+    transform:scale(1.05);
+}
+
+.dropdown strong{
+    font-size:15px;
+}
+
+.dropdown small{
+    font-size:12px;
+    opacity:.8;
+}
