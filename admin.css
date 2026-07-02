@@ -1,0 +1,110 @@
+.sidebar {
+    height: 100vh;
+    background: #101828;
+    color: white;
+    position: fixed;
+    width: 250px;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+}
+
+
+.sidebar.fechado {
+    margin-left: -250px;
+}
+
+
+.content {
+    margin-left: 250px;
+    transition: 0.3s;
+}
+
+
+.content.expandido {
+    margin-left: 0;
+}
+
+.sidebar {
+    height: 100vh;
+    background-image: url("./img/fundo.png");
+    color: white;
+    position: fixed;
+    width: 250px;
+    left: 0;
+    top: 0;
+}
+
+.sidebar a {
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+    padding: 12px 20px;
+}
+
+.sidebar a:hover {
+    background: #4338ca;
+    color: white;
+}
+
+.content {
+    margin-left: 250px;
+}
+
+.header {
+    height: 70px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.card-form {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.btn-purple {
+    background: #5b3df5;
+    color: white;
+}
+
+.btn-purple:hover {
+    background: #4328d6;
+    color: white;
+}
+.custom-navbar {
+    background-image: url("./img/fundo.png");
+    /*background: linear-gradient(
+        135deg,
+        #2b0050 0%,
+        #12001f 50%,
+        #2b0047 100%
+    );
+
+    min-height: 80px;
+
+    padding: 12px 30px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.35);
+
+    border-bottom: 1px solid rgba(255,255,255,.15);
+
+    color: white;
+
+}
+main {
+    /*background-image: url("./img/fundo.png");*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.card-form{
+    border: 1px solid rgba(43, 0, 80, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #fff;
+}
