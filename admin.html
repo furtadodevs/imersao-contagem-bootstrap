@@ -10,7 +10,7 @@
     <!-- Bootstrap 5.0.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./admin.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 </head>
 
@@ -45,7 +45,7 @@
             Eventos
 
             <span>
-                ^
+                <i class="bi bi-chevron-down"></i>
             </span>
 
         </a>
@@ -113,7 +113,7 @@
 
 
 
-        <main class="container-fluid p-4">
+        <main id="fundo" class="container-fluid p-4">
 
 
             <h2>
@@ -135,6 +135,10 @@
                     Informações do evento
                 </h4>
 
+
+                <div class="alert alert-success d-none"  id="alerta" role="alert">
+                    Seu cadastro foi concluído com sucesso.
+                </div>
 
 
                 <form id="formEvento">

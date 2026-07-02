@@ -24,13 +24,10 @@
 .content.expandido {
     margin-left: 0;
 }
-body {
-    background-color: #f5f6fa;
-}
 
 .sidebar {
     height: 100vh;
-    background: #101828;
+    background-image: url("./img/fundo.png");
     color: white;
     position: fixed;
     width: 250px;
@@ -79,8 +76,8 @@ body {
     color: white;
 }
 .custom-navbar {
-
-    background: linear-gradient(
+    background-image: url("./img/fundo.png");
+    /*background: linear-gradient(
         135deg,
         #2b0050 0%,
         #12001f 50%,
@@ -97,4 +94,17 @@ body {
 
     color: white;
 
+}
+main {
+    /*background-image: url("./img/fundo.png");*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.card-form{
+    border: 1px solid rgba(43, 0, 80, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #fff;
 }
