@@ -18,10 +18,8 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-    <!-- ===========================
-NAVBAR
-============================ -->
-
+    <!-- Banner -->
+<header>
 <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
 
     <div class="container-fluid px-lg-5">
@@ -53,304 +51,237 @@ NAVBAR
             </ul>
 
             <!-- BOTÕES -->
-            <div class="d-flex align-items-center gap-3">
+            <div class="d-flex gap-2">
 
-                <!-- Notificação -->
+                <button class="btn btn-login">Entrar</button>
+                <button class="btn btn-register">Cadastrar</button>
+
                 <button class="btn mic-btn">
-                    <i class="bi bi-bell-fill"></i>
+                    <i class="bi bi-mic-fill"></i>
                 </button>
-            
-                <!-- Usuário -->
-                <div class="dropdown">
-            
-                    <a href="#"
-                       class="d-flex align-items-center text-decoration-none dropdown-toggle"
-                       data-bs-toggle="dropdown">
-            
-                        <img src="https://i.pravatar.cc/45?img=12"
-                             class="rounded-circle border border-2 border-light"
-                             width="45"
-                             height="45"
-                             alt="Usuário">
-            
-                        <div class="ms-2 text-start">
-            
-                            <strong class="text-white d-block">
-                                João Silva
-                            </strong>
-            
-                            <small class="text-light">
-                                Administrador
-                            </small>
-            
-                        </div>
-            
-                    </a>
-            
-                    <ul class="dropdown-menu dropdown-menu-end shadow">
-            
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <i class="bi bi-person me-2"></i>
-                                Meu Perfil
-                            </a>
-                        </li>
-            
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <i class="bi bi-gear me-2"></i>
-                                Configurações
-                            </a>
-                        </li>
-            
-                        <li><hr class="dropdown-divider"></li>
-            
-                        <li>
-                            <a class="dropdown-item text-danger" href="#">
-                                <i class="bi bi-box-arrow-right me-2"></i>
-                                Sair
-                            </a>
-                        </li>
-            
-                    </ul>
-            
-                </div>
-            
+
             </div>
+
+        </div>
+    </div>
 </nav>
-
-
-    <!-- Banner -->
-    <header class=" text-white py-5">
-
-
-    </header>
+</header>
 
     <!-- Conteúdo -->
     <main class="container my-5 flex-grow-1">
+        <!-- Barra de pesquisa -->
+        <div class="row mb-4">
 
-        <!-- codgo -->
-        <!-- codgo -->
-        <!-- codgo -->
-        <!-- codgo -->
-        <!-- codgo -->
-        <!-- codgo -->
-        <!-- codgo -->
-        <!-- codgo -->
+            <div class="col-md-8 mx-auto">
 
+                <div class="input-group rounded-pill">
+
+                    <input type="text" class="form-control" placeholder="Pesquise eventos...">
+
+                    <button class="btn btn-secondary ">
+                        Buscar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Carrossel -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/1200/400?random=1" class="d-block w-100" alt="Imagem evento">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1200/400?random=2" class="d-block w-100" alt="Imagem evento">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1200/400?random=3" class="d-block w-100" alt="Imagem evento">
+                </div>
+
+            </div>
+
+
+            <!-- Botão voltar -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+
+            <!-- Botão avançar -->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+
+        </div>
+        <section class=" my-4">
+
+            <h2>Eventos em destaque</h2>
+        </section>
+
+
+        <!-- Cards 1 -->
+        <section class="row mt-3">
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/250?random=4" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 1</h5>
+                        <p class="card-text">Descrição do evento.</p>
+                        <a href="#" class="btn btn-secondary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/250?random=5" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 2</h5>
+                        <p class="card-text">Descrição do evento.</p>
+                        <a href="#" class="btn btn-secondary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/250?random=6" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 3</h5>
+                        <p class="card-text">Descrição do evento.</p>
+                        <a href="#" class="btn btn-secondary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/250?random=7" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 4</h5>
+                        <p class="card-text">Descrição do evento.</p>
+                        <a href="#" class="btn btn-secondary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/250?random=8" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 5</h5>
+                        <p class="card-text">Descrição do evento.</p>
+                        <a href="#" class="btn btn-secondary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        </div>
+        <section class=" my-4">
+
+            <h2>Festas, shows e festivais</h2>
+        </section>
+        
+        <!-- Cards 2 -->
+        <section class="row mt-3">
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/250?random=4" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 1</h5>
+                        <p class="card-text">Descrição do evento.</p>
+                        <a href="#" class="btn btn-secondary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/250?random=5" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 2</h5>
+                        <p class="card-text">Descrição do evento.</p>
+                        <a href="#" class="btn btn-secondary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/250?random=6" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 3</h5>
+                        <p class="card-text">Descrição do evento.</p>
+                        <a href="#" class="btn btn-secondary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/250?random=7" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 4</h5>
+                        <p class="card-text">Descrição do evento.</p>
+                        <a href="#" class="btn btn-secondary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/250?random=8" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 5</h5>
+                        <p class="card-text">Descrição do evento.</p>
+                        <a href="#" class="btn btn-secondary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
 
 
 
     </main>
 
 
-
-    
     <!-- Rodapé -->
-    <footer class=" text-white py-3 mt-auto">
-
-
-   <!-- Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-<style>
-
-/* evita o footer cobrir conteúdo */
-body{
-    padding-bottom:260px;
-}
-
-/* FOOTER FIXO */
-.footer-modern{
-
-    position:fixed;
-    bottom:0;
-    left:0;
-
-    width:100%;
-
-    background: linear-gradient(135deg,#050505 0%,#12001f 35%,#2b0047 70%,#050505 100%);
-
-    color:#fff;
-
-    padding:30px 0 20px;
-
-    z-index:9999;
-
-    overflow:hidden;
-}
-
-/* brilho decorativo */
-.footer-modern::before,
-.footer-modern::after{
-    content:"";
-    position:absolute;
-    border-radius:50%;
-    filter:blur(120px);
-}
-
-.footer-modern::before{
-    width:280px;
-    height:280px;
-    background:#7c3aed25;
-    top:-120px;
-    left:-100px;
-}
-
-.footer-modern::after{
-    width:260px;
-    height:260px;
-    background:#9333ea20;
-    bottom:-120px;
-    right:-100px;
-}
-
-.footer-modern .container{
-    position:relative;
-    z-index:2;
-}
-
-/* textos */
-.footer-modern h5{
-    color:#C084FC;
-    font-weight:600;
-    font-size:16px;
-    margin-bottom:12px;
-}
-
-.footer-modern p{
-    color:#d1d5db;
-    font-size:13px;
-    margin:0;
-    line-height:1.5;
-}
-
-.footer-modern ul{
-    list-style:none;
-    padding:0;
-    margin:0;
-}
-
-.footer-modern ul li{
-    color:#d1d5db;
-    font-size:13px;
-    margin-bottom:8px;
-}
-
-.footer-modern ul li i{
-    color:#A855F7;
-    margin-right:8px;
-}
-
-/* serviços links */
-.footer-modern a{
-    color:#d1d5db;
-    text-decoration:none;
-    transition:.3s;
-    font-size:13px;
-}
-
-.footer-modern a:hover{
-    color:#C084FC;
-    padding-left:4px;
-}
-
-/* redes sociais */
-.social-icons{
-    display:flex;
-    gap:10px;
-    margin-top:10px;
-}
-
-.social-icons a{
-
-    width:38px;
-    height:38px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    border-radius:50%;
-
-    background:rgba(255,255,255,.08);
-
-    color:#fff;
-
-    font-size:16px;
-
-    transition:.3s;
-
-}
-
-.social-icons a:hover{
-    background:#7C3AED;
-    transform:translateY(-4px);
-    box-shadow:0 8px 18px rgba(124,58,237,.4);
-}
-
-</style>
-
-<footer class="footer-modern">
-
-<div class="container">
-
-<div class="row">
-
-    <!-- SOBRE -->
-    <div class="col-4">
-
-        <h5>Imersão Contagem</h5>
-
-        <p>
-            Conectando você ao coração de Contagem.
-            Conectando pessoas, empresas e oportunidades através da tecnologia,
-            inovação e desenvolvimento.
-        </p>
-
-    </div>
-
-    <!-- SERVIÇOS -->
-    <div class="col-4">
-
-        <h5>Serviços</h5>
-
-        <ul>
-            <li><a href="#">Consultoria</a></li>
-            <li><a href="#">Eventos</a></li>
-            <li><a href="#"></a>Parceiros</li>
-            <li><a href="#"></a>Empresas</li>
-        </ul>
-
-    </div>
-
-    <!-- CONTATO -->
-    <div class="col-4">
-
-        <h5>Contato</h5>
-
-        <ul>
-            <li><i class="bi bi-telephone-fill"></i>(31) 99999-9999</li>
-            <li><i class="bi bi-envelope-fill"></i>contato@email.com</li>
-        </ul>
-
-        <div class="social-icons">
-
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-whatsapp"></i></a>
-
-        </div>
-
-    </div>
-
-</div>
-
-</div>
-
-</footer>
-        
-        
 
  
         <!-- Bootstrap Icons -->
@@ -359,138 +290,7 @@ body{
      <style>
       
      /* evita o footer cobrir conteúdo */
-     body{
-         padding-bottom:260px;
-     }
-      
-     /* FOOTER FIXO */
-     .footer-modern{
-      
-         position:fixed;
-         bottom:0;
-         left:0;
-      
-         width:100%;
-      
-         background: linear-gradient(135deg,#050505 0%,#12001f 35%,#2b0047 70%,#050505 100%);
-      
-         color:#fff;
-      
-         padding:30px 0 20px;
-      
-         z-index:9999;
-      
-         overflow:hidden;
-     }
-      
-     /* brilho decorativo */
-     .footer-modern::before,
-     .footer-modern::after{
-         content:"";
-         position:absolute;
-         border-radius:50%;
-         filter:blur(120px);
-     }
-      
-     .footer-modern::before{
-         width:280px;
-         height:280px;
-         background:#7c3aed25;
-         top:-120px;
-         left:-100px;
-     }
-      
-     .footer-modern::after{
-         width:260px;
-         height:260px;
-         background:#9333ea20;
-         bottom:-120px;
-         right:-100px;
-     }
-      
-     .footer-modern .container{
-         position:relative;
-         z-index:2;
-     }
-      
-     /* textos */
-     .footer-modern h5{
-         color:#C084FC;
-         font-weight:600;
-         font-size:16px;
-         margin-bottom:12px;
-     }
-      
-     .footer-modern p{
-         color:#d1d5db;
-         font-size:13px;
-         margin:0;
-         line-height:1.5;
-     }
-      
-     .footer-modern ul{
-         list-style:none;
-         padding:0;
-         margin:0;
-     }
-      
-     .footer-modern ul li{
-         color:#d1d5db;
-         font-size:13px;
-         margin-bottom:8px;
-     }
-      
-     .footer-modern ul li i{
-         color:#A855F7;
-         margin-right:8px;
-     }
-      
-     /* serviços links */
-     .footer-modern a{
-         color:#d1d5db;
-         text-decoration:none;
-         transition:.3s;
-         font-size:13px;
-     }
-      
-     .footer-modern a:hover{
-         color:#C084FC;
-         padding-left:4px;
-     }
-      
-     /* redes sociais */
-     .social-icons{
-         display:flex;
-         gap:10px;
-         margin-top:10px;
-     }
-      
-     .social-icons a{
-      
-         width:38px;
-         height:38px;
-      
-         display:flex;
-         justify-content:center;
-         align-items:center;
-      
-         border-radius:50%;
-      
-         background:rgba(255,255,255,.08);
-      
-         color:#fff;
-      
-         font-size:16px;
-      
-         transition:.3s;
-      
-     }
-      
-     .social-icons a:hover{
-         background:#7C3AED;
-         transform:translateY(-4px);
-         box-shadow:0 8px 18px rgba(124,58,237,.4);
-     }
+    
       
      </style>
       
@@ -521,8 +321,8 @@ body{
              <ul>
                  <li><a href="#">Consultoria</a></li>
                  <li><a href="#">Eventos</a></li>
-                 <li><a href="#"></a>Parceiros</li>
-                 <li><a href="#"></a>Empresas</li>
+                 <li><a href="#">Parceiros</a></li>
+                 <li><a href="#">Empresas</a></li>
              </ul>
       
          </div>
@@ -553,7 +353,6 @@ body{
       
      </footer>
       
-
 
     <!-- Bootstrap 5.0.2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
