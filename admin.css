@@ -78,3 +78,23 @@ body {
     background: #4328d6;
     color: white;
 }
+.custom-navbar {
+
+    background: linear-gradient(
+        135deg,
+        #2b0050 0%,
+        #12001f 50%,
+        #2b0047 100%
+    );
+
+    min-height: 80px;
+
+    padding: 12px 30px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.35);
+
+    border-bottom: 1px solid rgba(255,255,255,.15);
+
+    color: white;
+
+}
