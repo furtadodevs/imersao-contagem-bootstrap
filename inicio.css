@@ -535,3 +535,24 @@ h2{
     color: #ffffff;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.dropdown-toggle::after{
+    display:none;
+}
+
+.dropdown img{
+    object-fit:cover;
+    transition:.3s;
+}
+
+.dropdown img:hover{
+    transform:scale(1.05);
+}
+
+.dropdown strong{
+    font-size:15px;
+}
+
+.dropdown small{
+    font-size:12px;
+    opacity:.8;
+}
