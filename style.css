@@ -534,12 +534,8 @@ body{
 h2{
     color: #ffffff;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-<<<<<<< HEAD
-}
-=======
-
 }
 
-
-
->>>>>>> 8f80f4f9cb9a33fbdbcd354d412562db2de1ea0e
+#entrar {
+    text-decoration: none;
+}

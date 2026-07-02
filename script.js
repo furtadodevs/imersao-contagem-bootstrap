@@ -28,6 +28,6 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
     event.preventDefault();
 
     // Redireciona para a página principal
-    window.location.href = "index.html";
+    window.location.href = "inicio.html";
 
 });
