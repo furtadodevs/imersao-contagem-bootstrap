@@ -536,4 +536,6 @@ h2{
 #entrar {
     text-decoration: none;
 }
-
+.logo {
+    width: 60px;
+}
