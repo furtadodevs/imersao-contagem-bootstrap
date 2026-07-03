@@ -20,8 +20,8 @@ footer {
     color: #fff;
 }
 body{
-    background-color: black;
-}
+    background-image: url("./img/fundo2.png");
+    }
 nav{
     background-color: #6f42c1;
     color: #fff;
@@ -33,7 +33,7 @@ nav{
 ========================================*/
 
 .custom-navbar{
-    background: linear-gradient(90deg, #2b0b42, #4b1d69, #2b0b42);
+    background-image: url("./img/fundo.png");
     min-height: 80px;
     padding: 12px 30px;
     box-shadow: 0 8px 25px rgba(0,0,0,.18);
@@ -408,7 +408,7 @@ nav{
 
     width: 100%;
 
-    background: linear-gradient(135deg,#050505 0%,#12001f 35%,#2b0047 70%,#050505 100%);
+    background-image: url("./img/fundo.png");
 
     color:#fff;
 
@@ -527,12 +527,8 @@ nav{
 }
 
 
-body{
-    background: #23093f;
-}
-
 h2{
-    color: #ffffff;
+    color: #000000;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
